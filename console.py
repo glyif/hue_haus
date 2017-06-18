@@ -10,7 +10,7 @@ class hue_house(cmd.Cmd):
     if file_path.is_file():
         bridge = config.reload()
     else:
-        bridge = Bridge()
+        bridge = bridge.Bridge()
     
     def do_test(self, arg):
         print(self.bridge.username)

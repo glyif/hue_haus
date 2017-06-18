@@ -15,6 +15,7 @@ class Bridge:
             self.make_user()
             self.id = str(uuid4())
             config.new(self)
+            self.save()
 
     def save(self):
         config.save()
